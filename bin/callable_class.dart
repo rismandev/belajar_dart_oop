@@ -1,13 +1,4 @@
-class Sum {
-  int first;
-  int second;
-
-  Sum(this.first, this.second);
-
-  int call() {
-    return first + second;
-  }
-}
+import 'data/sum.dart';
 
 void main(List<String> args) {
   var sum = Sum(10, 20);
