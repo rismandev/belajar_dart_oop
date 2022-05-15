@@ -1,5 +1,3 @@
-// ignore_for_file: hash_and_equals
-
 class Category {
   String id;
   String name;
@@ -16,4 +14,18 @@ class Category {
       return false;
     }
   }
+
+  // Hash Code cara pertama
+  // @override
+  // int get hashCode {
+  //   var result = id.hashCode;
+
+  //   result += name.hashCode;
+
+  //   return result;
+  // }
+
+  // Hash Code cara kedua
+  @override
+  int get hashCode => id.hashCode ^ name.hashCode;
 }
