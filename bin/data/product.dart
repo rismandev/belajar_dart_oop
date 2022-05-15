@@ -15,6 +15,11 @@ class Product {
   // int? _getQuantity() {
   //   return _quantity;
   // }
+
+  @override
+  String toString() {
+    return "Product: {id=$id, name=$name, quantity=$_quantity}";
+  }
 }
 
 void main(List<String> args) {
